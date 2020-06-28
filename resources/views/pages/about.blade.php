@@ -5,7 +5,7 @@
     <div class="container">
         <h2>What is Laracate?</h2>
         <p>
-            Laracarte is a clone app of 
+            {{ config('app.name') }} is a clone app of 
             <a href="https://laramap.com" target="_blank">Laramap.com</a>
         </p>
         
@@ -21,9 +21,9 @@
         
         <hr>
         <h2>What is Laramap?</h2>
-        <p>Laramap is a website by which Laracarte was inspired :).</p>
+        <p>Laramap is a website by which {{ config('app.name') }} was inspired :).</p>
         <p>More info <a href="https://laramp.com/p/about">here</a>.</p>
-        <h2>which tools and services are used in laracarte?</h2>
+        <h2>which tools and services are used in {{ config('app.name') }}?</h2>
         <p>basicly it's build on Laravel &amp; Bootstrap. but there is a branch of services usedd for email and other section</p>
         <ul>
             <li>Laravel</li>

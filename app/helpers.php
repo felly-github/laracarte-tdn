@@ -2,7 +2,7 @@
 
 if(! function_exists('page_title')){
     function page_title($title){
-        $base_title = 'Laracate';
+        $base_title = config('app.name') . ' list of artisan';
         if($title == ''){
             return $base_title;
         }else{
