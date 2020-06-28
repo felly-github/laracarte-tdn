@@ -21,5 +21,5 @@ Route::get('/artisan', [
 
 Route::get('/contact', [
     'as' => 'contact_path',
-    'uses' => 'PagesController@contact'
+    'uses' => 'MessagesController@create'
 ]);
