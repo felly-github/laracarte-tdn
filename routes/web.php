@@ -21,10 +21,14 @@ Route::get('/artisan', [
 
 Route::get('/contact', [
     'as' => 'contact_path',
+<<<<<<< HEAD
     'uses' => 'ContactsController@create'
 ]);
 
 Route::post('/contact', [
     'as' => 'contact_path',
     'uses' => 'ContactsController@store'
+=======
+    'uses' => 'MessagesController@create'
+>>>>>>> afc9d9e95ecaf8b01af27444fc1093a500879885
 ]);
