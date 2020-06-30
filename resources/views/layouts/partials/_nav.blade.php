@@ -1,39 +1,28 @@
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+            
+  <a class="navbar-brand my-0 mr-md-auto font-weight-normal"
+  href="{{ route('home_path') }}">
+  {{ config('app.name') }}
+  </a>
 
+  <nav class="my-2 my-md-0 mr-md-3 navbar-left">
+      <a class="p-2 text-dark {{set_active_route('home_path')}}" href="{{ route('home_path') }}">Home</a>
+      <a class="p-2 text-dark {{set_active_route('about_path')}}" href="{{route('about_path')}}">About</a>
+      <a class="p-2 text-dark {{set_active_route('artisan_path')}}" href="#about">Artisans</a>
 
-<!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-static-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="{{ route('home_path') }}"> {{ config('app.name') }} </a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li class="{{set_active_route('home_path')}}"><a href="{{ route('home_path') }}">Home</a></li>
-          <li class="{{set_active_route('about_path')}}"><a href="{{route('about_path')}}">About</a></li>
-          <li class="{{set_active_route('artisan_path')}}"><a href="#about">Artisans</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Planet <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="https://laravel.com">Laravel.com</a></li>
-              <li><a href="https://laravel.io">Laravel.io</a></li>
-              <li><a href="https://laracast.com">laracast</a></li>
-              <li><a href="https://larajobs.com">Larajobs</a></li>
-              <li><a href="https://laravel-news.com">Laravel News</a></li>
-              <li><a href="https://larachat.co">Larachat</a></li>
-            </ul>
-          </li>
-          <li class="{{set_active_route('contact_path')}}" ><a href="{{route('contact_path')}}">Contact</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li ><a href="#login">Login</a></li>
-          <li><a href="#registre">Registre</a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div>
+      <div class="btn-group">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Planet <span class="caret"></span></a>
+          <div class="dropdown-menu">
+              <a class="dropdown-item" href="https://laravel.com">Laravel.com</a>
+              <a class="dropdown-item" href="https://laravel.io">Laravel.io</a>
+              <a class="dropdown-item" href="https://laracast.com">laracast</a>
+              <a class="dropdown-item" href="https://larajobs.com">Larajobs</a>
+              <a class="dropdown-item" href="https://laravel-news.com">Laravel News</a>
+              <a class="dropdown-item" href="https://larachat.co">Larachat</a>
+          </div>
+        </div>
+    <a class="p-2 text-dark {{set_active_route('contact_path')}}"href="{{route('contact_path')}}">Contact</a>
+    <a class="p-2 text-dark" href="#login">Login</a>
+    <a class="p-2 text-dark" href="#registre">Registre</a>
   </nav>
+</div>
